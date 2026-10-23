@@ -1,15 +1,17 @@
+<a id="top"></a>
+
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:2c5364,100:00d4ff&height=200&section=header&text=NestiHC&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Control%20no%20lineal%20%7C%20Sistemas%20inteligentes%20%7C%20LaTeX&descAlignY=60&descSize=18" width="100%" alt="Banner NestiHC"/>
 
 <a href="https://github.com/NestiHC">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=2F81F7&center=true&vCenter=true&width=700&height=60&lines=%C2%A1Hola!+Soy+NestiHC+%F0%9F%91%8B;Maestr%C3%ADa+en+Electr%C3%B3nica+%F0%9F%8E%93;Controlando+lo+no+lineal+(y+mi+caf%C3%A9+%E2%98%95);dx%2Fdt+%3D+f(x)+%2B+g(x)u+%F0%9F%8C%80;Instructor+en+Robotica76+%F0%9F%A4%96;Escribo+apuntes+en+LaTeX+%E2%9C%8D%EF%B8%8F;Si+compila+a+la+primera%2C+sospecha+%F0%9F%98%85;Siempre+aprendiendo+%F0%9F%9A%80" alt="Texto animado"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=2F81F7&center=true&vCenter=true&width=700&height=60&lines=%C2%A1Hola!+Soy+NestiHC+%F0%9F%91%8B;Maestr%C3%ADa+en+Electr%C3%B3nica+%F0%9F%8E%93;Controlando+lo+no+lineal+(y+mi+caf%C3%A9+%E2%98%95);Instructor+en+Robotica76+%F0%9F%A4%96;Escribo+apuntes+en+LaTeX+%E2%9C%8D%EF%B8%8F;Si+compila+a+la+primera%2C+sospecha+%F0%9F%98%85;Siempre+aprendiendo+%F0%9F%9A%80" alt="Texto animado"/>
 </a>
 
 <br><br>
 
 <a href="https://github.com/Robotica76"><img src="https://img.shields.io/badge/Club_Rob%C3%B3tica_76-00D4FF?style=for-the-badge&logo=github&logoColor=white" alt="Organización Robotica76"/></a>
-<a href="https://www.linkedin.com/in/tu-usuario/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://www.linkedin.com/in/nestorhernandezcastellanos"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://www.instagram.com/tu-usuario/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
 
 </div>
@@ -34,16 +36,6 @@ Me interesa el **control no lineal**, los **sistemas inteligentes** y compartir 
 - ✍️ Escribiendo apuntes y documentación técnica en **LaTeX**
 - 🌱 Siempre aprendiendo y abierto a colaborar
 
-<details>
-<summary>🌀 <b>Mi sistema, modelado</b> (clic si te gusta la teoría de control)</summary>
-
-<br>
-
-$$\dot{x} = f(x) + g(x)\,u$$
-
-donde **x** = ganas de aprender, **u** = café ☕ y **f(x)** = ... mejor no preguntes 😅
-
-</details>
 
 ---
 
@@ -203,13 +195,23 @@ Cuando tengas el enlace de tu widget, descomenta y pégalo aquí:
 
 ---
 
-## 📫 Contacto
+## 💬 Let's Talk
 
-- 💼 LinkedIn: [tu-usuario](https://www.linkedin.com/in/tu-usuario/)
-- 📸 Instagram: [@tu-usuario](https://www.instagram.com/tu-usuario/)
-- 📧 Correo: [tu-correo@ejemplo.com](mailto:tu-correo@ejemplo.com)
-- 🐙 GitHub: [@NestiHC](https://github.com/NestiHC)
-- 🤖 Organización: [Robotica76](https://github.com/Robotica76)
+Feel free to reach out if you want to collaborate on a project, ask a question, or just say hi!
+
+<div align="center">
+
+<a href="https://www.linkedin.com/in/nestorhernandezcastellanos"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://www.instagram.com/tu-usuario/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+<a href="mailto:nestihc22@hotmail.com"><img src="https://img.shields.io/badge/Correo-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="Correo"/></a>
+<a href="https://github.com/NestiHC"><img src="https://img.shields.io/badge/GitHub-NestiHC-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub de NestiHC"/></a>
+<a href="https://github.com/Robotica76"><img src="https://img.shields.io/badge/Robotica76-Organizaci%C3%B3n-00D4FF?style=for-the-badge&logo=github&logoColor=white" alt="Organización Robotica76"/></a>
+
+<br>
+
+**Thanks for visiting! 😄**
+
+</div>
 
 ---
 
@@ -218,6 +220,8 @@ Cuando tengas el enlace de tu widget, descomenta y pégalo aquí:
 <img src="https://komarev.com/ghpvc/?username=NestiHC&label=Visitas&color=00d4ff&style=for-the-badge" alt="Contador de visitas"/>
 
 ⭐️ Gracias por pasarte por mi perfil. Si te sirven los apuntes, ¡una estrella siempre se agradece!
+
+<a href="#top"><img src="https://img.shields.io/badge/%E2%AC%86%EF%B8%8F_Back_to_top-00D4FF?style=for-the-badge" alt="Back to top"/></a>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00d4ff,100:0f2027&height=100&section=footer" width="100%"/>
 
