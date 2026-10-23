@@ -94,7 +94,7 @@ Apuntes de la materia **Control No Lineal** — Maestría en Electrónica, Opci�
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NestiHC/NestiHC/main/profile-summary-card-output/github_dark/0-profile-details.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NestiHC/NestiHC/main/profile-summary-card-output/github/0-profile-details.svg">
-  <img alt="0-profile-details" src="https://raw.githubusercontent.com/NestiHC/NestiHC/main/profile-summary-card-output/github/0-profile-details.svg" width="100%">
+  <img alt="Gráfica de actividad" src="https://raw.githubusercontent.com/NestiHC/NestiHC/main/profile-summary-card-output/github/0-profile-details.svg" width="100%">
 </picture>
 
 </div>
@@ -140,14 +140,6 @@ Apuntes de la materia **Control No Lineal** — Maestría en Electrónica, Opci�
   <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=NestiHC&theme=dark&hide_border=true">
   <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=NestiHC&theme=default&hide_border=true">
   <img alt="Racha de contribuciones" src="https://streak-stats.demolab.com?user=NestiHC&theme=default&hide_border=true">
-</picture>
-
-<br><br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NestiHC&theme=github_dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NestiHC&theme=github">
-  <img alt="Gráfica de actividad" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NestiHC&theme=github" width="100%">
 </picture>
 
 <br><br>
