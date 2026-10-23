@@ -10,8 +10,6 @@
 
 </div>
 
-<img align="right" src="https://github.com/user-attachments/assets/76df59b9-a1e1-4fe6-8c81-0acddd85b3a1" width="200" alt="Mi Mii de Nintendo"/>
-
 <div align="center">
 
 <br>
@@ -138,7 +136,7 @@ Apuntes de la materia **Control No Lineal** — Maestría en Electrónica, Opci�
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NestiHC/NestiHC/main/profile-summary-card-output/github_dark/0-profile-details.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NestiHC/NestiHC/main/profile-summary-card-output/github/0-profile-details.svg">
-  <img alt="0-profile-details" src="https://raw.githubusercontent.com/NestiHC/NestiHC/main/profile-summary-card-output/github/0-profile-details.svg" width="100%">
+  <img alt="Gráfica de actividad" src="https://raw.githubusercontent.com/NestiHC/NestiHC/main/profile-summary-card-output/github/0-profile-details.svg" width="100%">
 </picture>
 
 </div>
@@ -189,14 +187,14 @@ Apuntes de la materia **Control No Lineal** — Maestría en Electrónica, Opci�
 <br><br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=NestiHC&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ffffff&area=true&area_color=58a6ff&hide_border=true">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=NestiHC&bg_color=ffffff&color=0969da&line=0969da&point=1f2328&area=true&area_color=0969da&hide_border=true">
-  <img alt="Gráfica de actividad" src="https://github-readme-activity-graph.vercel.app/graph?username=NestiHC&bg_color=ffffff&color=0969da&line=0969da&point=1f2328&area=true&area_color=0969da&hide_border=true" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NestiHC&theme=github_dark">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NestiHC&theme=github">
+  <img alt="Gráfica de actividad" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NestiHC&theme=github" width="100%">
 </picture>
 
 <br><br>
 
-<img src="https://github-profile-trophy.vercel.app/?username=NestiHC&theme=flat&no-frame=true&no-bg=true&row=1&column=7" alt="Trofeos de GitHub"/>
+<img src="https://trophygithubreadmelang.cybee.dpdns.org/?username=NestiHC&theme=flat&no-frame=true&no-bg=true&row=1&column=7" alt="Trofeos de GitHub"/>
 
 </div>
 
