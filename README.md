@@ -143,7 +143,9 @@ Apuntes de la materia **Control No Lineal** — Maestría en Electrónica, Opci�
 
 </div>
 
-<table>
+<div align="center">
+
+<table align="center">
   <tr>
     <td width="50%">
 <picture>
@@ -178,6 +180,8 @@ Apuntes de la materia **Control No Lineal** — Maestría en Electrónica, Opci�
   </tr>
 </table>
 
+</div>
+
 <div align="center">
 
 <picture>
@@ -186,6 +190,7 @@ Apuntes de la materia **Control No Lineal** — Maestría en Electrónica, Opci�
   <img alt="Racha de contribuciones" src="https://streak-stats.demolab.com?user=NestiHC&theme=default&hide_border=true">
 </picture>
 
+<<<<<<< Updated upstream
 <br><br>
 
 <picture>
@@ -197,6 +202,9 @@ Apuntes de la materia **Control No Lineal** — Maestría en Electrónica, Opci�
 <br><br>
 
 <img src="https://github-profile-trophy.vercel.app/?username=NestiHC&theme=flat&no-frame=true&no-bg=true&row=1&column=7" alt="Trofeos de GitHub"/>
+=======
+<img src="https://trophygithubreadmelang.cybee.dpdns.org/?username=NestiHC&theme=flat&no-frame=true&no-bg=true&row=1&column=7" alt="Trofeos de GitHub"/>
+>>>>>>> Stashed changes
 
 </div>
 
