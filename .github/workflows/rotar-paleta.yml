@@ -1,0 +1,67 @@
+name: Rotar paleta del perfil
+
+on:
+  # Cada hora, en punto. GitHub puede retrasar unos minutos las ejecuciones programadas.
+  schedule:
+    - cron: "0 * * * *"
+  # Permite ejecutarlo a mano desde la pestaña Actions (necesario la primera vez)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rotar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Elegir paleta y generar las imágenes
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+
+          # Paletas: banner (degradado) y color del texto animado, en versión oscura (D) y clara (L)
+          PALETAS=(bosque oceano atardecer aurora)
+          NOMBRE=${PALETAS[$((RANDOM % ${#PALETAS[@]}))]}
+
+          case "$NOMBRE" in
+            bosque)
+              BD="0:0b1f14,50:14532d,100:4ade80"; BL="0:14532d,50:2f855a,100:a7f3d0"
+              TD="86EFAC"; TL="166534" ;;
+            oceano)
+              BD="0:03111f,50:0b3c5d,100:22d3ee"; BL="0:0c4a6e,50:0891b2,100:a5f3fc"
+              TD="67E8F9"; TL="0E7490" ;;
+            atardecer)
+              BD="0:1e1b4b,50:9d174d,100:fb923c"; BL="0:be123c,50:ea580c,100:fde68a"
+              TD="FDBA74"; TL="C2410C" ;;
+            aurora)
+              BD="0:0f172a,50:0d9488,100:a78bfa"; BL="0:0f766e,50:14b8a6,100:c4b5fd"
+              TD="5EEAD4"; TL="0F766E" ;;
+          esac
+          echo "Paleta elegida: $NOMBRE"
+
+          # Banner (capsule-render)
+          BANNER='https://capsule-render.vercel.app/api?type=waving&height=200&section=header&text=NestiHC&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Control%20no%20lineal%20%7C%20Sistemas%20inteligentes%20%7C%20LaTeX&descAlignY=60&descSize=18'
+
+          # Texto animado (readme-typing-svg)
+          LINEAS='%C2%A1Hola!+Soy+NestiHC+%F0%9F%91%8B;Maestr%C3%ADa+en+Electr%C3%B3nica+%F0%9F%8E%93;Controlando+lo+no+lineal+(y+mi+caf%C3%A9+%E2%98%95);Instructor+en+Robotica76+%F0%9F%A4%96;Escribo+apuntes+en+LaTeX+%E2%9C%8D%EF%B8%8F;Si+compila+a+la+primera%2C+sospecha+%F0%9F%98%85;Siempre+aprendiendo+%F0%9F%9A%80'
+          TYPING='https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&center=true&vCenter=true&width=540&height=60'
+
+          descargar() {
+            curl -fsSL --retry 3 --retry-delay 5 -o "dist/$1" "$2"
+            # Si el servicio devolvió algo que no es un SVG, se cancela sin tocar lo que ya está publicado
+            grep -q '<svg' "dist/$1"
+          }
+
+          descargar banner-dark.svg  "${BANNER}&color=${BD}"
+          descargar banner-light.svg "${BANNER}&color=${BL}"
+          descargar typing-dark.svg  "${TYPING}&color=${TD}&lines=${LINEAS}"
+          descargar typing-light.svg "${TYPING}&color=${TL}&lines=${LINEAS}"
+
+      - name: Publicar en la rama "tema"
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: tema
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
