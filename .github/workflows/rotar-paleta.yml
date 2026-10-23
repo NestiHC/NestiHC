@@ -58,8 +58,6 @@ jobs:
           descargar typing-dark.svg  "${TYPING}&color=${TD}&lines=${LINEAS}"
           descargar typing-light.svg "${TYPING}&color=${TL}&lines=${LINEAS}"
 
-<<<<<<< Updated upstream
-=======
           # Incrustar el GIF para que GitHub no bloquee un recurso externo dentro del SVG.
           MII='https://github.com/user-attachments/assets/76df59b9-a1e1-4fe6-8c81-0acddd85b3a1'
           curl -fsSL --retry 3 --retry-delay 5 -o dist/mii.gif "$MII"
@@ -82,7 +80,14 @@ jobs:
           done
           rm dist/mii.gif dist/mii.b64
 
->>>>>>> Stashed changes
+=======
+          # Integrar el GIF en el lado derecho del banner sin crear archivos en main.
+          MII='https://github.com/user-attachments/assets/76df59b9-a1e1-4fe6-8c81-0acddd85b3a1'
+          for banner in dist/banner-dark.svg dist/banner-light.svg; do
+            perl -0pi -e 's#</svg>#<image x="675" y="20" width="150" height="150" preserveAspectRatio="xMidYMid meet" href="'"$MII"'" xlink:href="'"$MII"'"/></svg>#' "$banner"
+          done
+
+>>>>>>> eb21404178c789c007ce4829a6bbddfeb54fbd18
       - name: Publicar en la rama "tema"
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
