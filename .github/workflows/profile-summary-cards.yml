@@ -1,0 +1,25 @@
+name: Tarjetas de resumen de perfil
+
+on:
+  # Se actualiza una vez al día (medianoche UTC)
+  schedule:
+    - cron: "0 0 * * *"
+  # Permite ejecutarlo a mano desde la pestaña Actions
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-summary-cards
+    permissions:
+      contents: write
+    steps:
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          # Si no se generan todas las tarjetas o aparece el error
+          # "Resource not accessible by integration", crea un token personal
+          # (PAT), guárdalo como secret llamado METRICS_TOKEN y cambia la línea
+          # de abajo por: ${{ secrets.METRICS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
