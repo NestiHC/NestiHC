@@ -255,7 +255,9 @@ Feel free to reach out if you want to collaborate on a project, ask a question, 
 
 <div align="center">
 
-<img src="https://komarev.com/ghpvc/?username=NestiHC&label=Visitas&color=00d4ff&style=for-the-badge" alt="Contador de visitas"/>
+<a href="https://github.com/NestiHC">
+  <img src="https://komarev.com/ghpvc/?username=NestiHC&label=Visitas&color=00d4ff&style=for-the-badge" alt="Contador de visitas" width="160" height="28"/>
+</a>
 
 ⭐️ Gracias por pasarte por mi perfil. Si te sirven los apuntes, ¡una estrella siempre se agradece!
 
