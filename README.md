@@ -145,14 +145,14 @@ Apuntes de la materia **Control No Lineal** — Maestría en Electrónica, Opci�
 <br><br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=NestiHC&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ffffff&area=true&area_color=58a6ff&hide_border=true">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=NestiHC&bg_color=ffffff&color=0969da&line=0969da&point=1f2328&area=true&area_color=0969da&hide_border=true">
-  <img alt="Gráfica de actividad" src="https://github-readme-activity-graph.vercel.app/graph?username=NestiHC&bg_color=ffffff&color=0969da&line=0969da&point=1f2328&area=true&area_color=0969da&hide_border=true" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NestiHC&theme=github_dark">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NestiHC&theme=github">
+  <img alt="Gráfica de actividad" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NestiHC&theme=github" width="100%">
 </picture>
 
 <br><br>
 
-<img src="https://github-profile-trophy.vercel.app/?username=NestiHC&theme=flat&no-frame=true&no-bg=true&row=1&column=7" alt="Trofeos de GitHub"/>
+<img src="https://trophygithubreadmelang.cybee.dpdns.org/?username=NestiHC&theme=flat&no-frame=true&no-bg=true&row=1&column=7" alt="Trofeos de GitHub"/>
 
 </div>
 
