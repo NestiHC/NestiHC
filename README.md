@@ -1,5 +1,12 @@
 <a id="top"></a>
 
+<div align="right">
+
+<a href="https://github.com/NestiHC"><img src="https://img.shields.io/badge/%F0%9F%8C%90_Espa%C3%B1ol-00D4FF?style=flat-square" alt="Español"/></a>
+<a href="https://github.com/NestiHC/NestiHC/blob/main/README.en.md"><img src="https://img.shields.io/badge/English-555555?style=flat-square" alt="Switch to English"/></a>
+
+</div>
+
 <div align="center">
 
 <picture>
@@ -255,6 +262,16 @@ Feel free to reach out if you want to collaborate on a project, ask a question, 
 
 <div align="center">
 
+<!--
+
+<a href="https://github.com/NestiHC?tab=followers">
+  <img src="https://img.shields.io/github/followers/NestiHC?style=for-the-badge&label=Seguidores&color=00d4ff&logo=github&logoColor=white" alt="Seguidores en GitHub"/>
+</a>
+
+Contador de visitas anterior (komarev.com). Falla de forma intermitente porque depende de un servicio gratuito.
+Si quieres volver a probarlo, descomenta:
+-->
+
 <a href="https://github.com/NestiHC">
   <img src="https://komarev.com/ghpvc/?username=NestiHC&label=Visitas&color=00d4ff&style=for-the-badge" alt="Contador de visitas" width="160" height="28"/>
 </a>
@@ -263,6 +280,10 @@ Feel free to reach out if you want to collaborate on a project, ask a question, 
 
 <a href="#top"><img src="https://img.shields.io/badge/%E2%AC%86%EF%B8%8F_Back_to_top-00D4FF?style=for-the-badge" alt="Back to top"/></a>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00d4ff,100:0f2027&height=100&section=footer" width="100%"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NestiHC/NestiHC/tema/footer-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NestiHC/NestiHC/tema/footer-light.svg">
+  <img alt="Pie de página" src="https://raw.githubusercontent.com/NestiHC/NestiHC/tema/footer-light.svg" width="100%">
+</picture>
 
 </div>
