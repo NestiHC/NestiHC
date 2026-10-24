@@ -10,6 +10,10 @@ on:
 permissions:
   contents: write
 
+env:
+  # Opta por Node 24 en las acciones de JavaScript (Node 20 ya fue retirado de los runners)
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   rotar:
     runs-on: ubuntu-latest
@@ -20,32 +24,43 @@ jobs:
           set -euo pipefail
           mkdir -p dist
 
-          # Paletas: banner (degradado) y color del texto animado, en versión oscura (D) y clara (L)
+          # Paletas: banner (degradado), pie de página (degradado invertido) y color del texto animado,
+          # en versión oscura (D) y clara (L)
           PALETAS=(bosque oceano atardecer aurora)
           NOMBRE=${PALETAS[$((RANDOM % ${#PALETAS[@]}))]}
 
           case "$NOMBRE" in
             bosque)
               BD="0:0b1f14,50:14532d,100:4ade80"; BL="0:14532d,50:2f855a,100:a7f3d0"
+              FD="0:4ade80,50:14532d,100:0b1f14"; FL="0:a7f3d0,50:2f855a,100:14532d"
               TD="86EFAC"; TL="166534" ;;
             oceano)
               BD="0:03111f,50:0b3c5d,100:22d3ee"; BL="0:0c4a6e,50:0891b2,100:a5f3fc"
+              FD="0:22d3ee,50:0b3c5d,100:03111f"; FL="0:a5f3fc,50:0891b2,100:0c4a6e"
               TD="67E8F9"; TL="0E7490" ;;
             atardecer)
               BD="0:1e1b4b,50:9d174d,100:fb923c"; BL="0:be123c,50:ea580c,100:fde68a"
+              FD="0:fb923c,50:9d174d,100:1e1b4b"; FL="0:fde68a,50:ea580c,100:be123c"
               TD="FDBA74"; TL="C2410C" ;;
             aurora)
               BD="0:0f172a,50:0d9488,100:a78bfa"; BL="0:0f766e,50:14b8a6,100:c4b5fd"
+              FD="0:a78bfa,50:0d9488,100:0f172a"; FL="0:c4b5fd,50:14b8a6,100:0f766e"
               TD="5EEAD4"; TL="0F766E" ;;
           esac
           echo "Paleta elegida: $NOMBRE"
 
-          # Banner (capsule-render)
-          BANNER='https://capsule-render.vercel.app/api?type=waving&height=200&section=header&text=NestiHC&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Control%20no%20lineal%20%7C%20Sistemas%20inteligentes%20%7C%20LaTeX&descAlignY=60&descSize=18'
+          # Banner (capsule-render): texto en español e inglés
+          BANNER='https://capsule-render.vercel.app/api?type=waving&height=200&section=header&text=NestiHC&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=38&descAlignY=60&descSize=18'
+          DESC_ES='Control%20no%20lineal%20%7C%20Sistemas%20inteligentes%20%7C%20LaTeX'
+          DESC_EN='Nonlinear%20control%20%7C%20Intelligent%20systems%20%7C%20LaTeX'
 
-          # Texto animado (readme-typing-svg)
-          LINEAS='%C2%A1Hola!+Soy+NestiHC+%F0%9F%91%8B;Maestr%C3%ADa+en+Electr%C3%B3nica+%F0%9F%8E%93;Controlando+lo+no+lineal+(y+mi+caf%C3%A9+%E2%98%95);Instructor+en+Robotica76+%F0%9F%A4%96;Escribo+apuntes+en+LaTeX+%E2%9C%8D%EF%B8%8F;Si+compila+a+la+primera%2C+sospecha+%F0%9F%98%85;Siempre+aprendiendo+%F0%9F%9A%80'
+          # Pie de página (capsule-render): sin texto, es el mismo para los dos idiomas
+          FOOTER='https://capsule-render.vercel.app/api?type=waving&height=100&section=footer'
+
+          # Texto animado (readme-typing-svg): español e inglés
           TYPING='https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&center=true&vCenter=true&width=540&height=60'
+          LINEAS_ES='%C2%A1Hola!+Soy+NestiHC+%F0%9F%91%8B;Maestr%C3%ADa+en+Electr%C3%B3nica+%F0%9F%8E%93;Controlando+lo+no+lineal+(y+mi+caf%C3%A9+%E2%98%95);Instructor+en+Robotica76+%F0%9F%A4%96;Escribo+apuntes+en+LaTeX+%E2%9C%8D%EF%B8%8F;Si+compila+a+la+primera%2C+sospecha+%F0%9F%98%85;Siempre+aprendiendo+%F0%9F%9A%80'
+          LINEAS_EN='Hi!+I%27m+NestiHC+%F0%9F%91%8B;Master%27s+in+Electronics+%F0%9F%8E%93;Controlling+the+nonlinear+(and+my+coffee+%E2%98%95);Instructor+at+Robotica76+%F0%9F%A4%96;Writing+notes+in+LaTeX+%E2%9C%8D%EF%B8%8F;If+it+compiles+on+the+first+try%2C+be+suspicious+%F0%9F%98%85;Always+learning+%F0%9F%9A%80'
 
           descargar() {
             curl -fsSL --retry 3 --retry-delay 5 -o "dist/$1" "$2"
@@ -53,16 +68,27 @@ jobs:
             grep -q '<svg' "dist/$1"
           }
 
-          descargar banner-dark.svg  "${BANNER}&color=${BD}"
-          descargar banner-light.svg "${BANNER}&color=${BL}"
-          descargar typing-dark.svg  "${TYPING}&color=${TD}&lines=${LINEAS}"
-          descargar typing-light.svg "${TYPING}&color=${TL}&lines=${LINEAS}"
+          # Español (nombres originales, para no romper el README actual)
+          descargar banner-dark.svg  "${BANNER}&desc=${DESC_ES}&color=${BD}"
+          descargar banner-light.svg "${BANNER}&desc=${DESC_ES}&color=${BL}"
+          descargar typing-dark.svg  "${TYPING}&color=${TD}&lines=${LINEAS_ES}"
+          descargar typing-light.svg "${TYPING}&color=${TL}&lines=${LINEAS_ES}"
+
+          # Inglés
+          descargar banner-en-dark.svg  "${BANNER}&desc=${DESC_EN}&color=${BD}"
+          descargar banner-en-light.svg "${BANNER}&desc=${DESC_EN}&color=${BL}"
+          descargar typing-en-dark.svg  "${TYPING}&color=${TD}&lines=${LINEAS_EN}"
+          descargar typing-en-light.svg "${TYPING}&color=${TL}&lines=${LINEAS_EN}"
+
+          # Pie de página (los dos idiomas lo comparten)
+          descargar footer-dark.svg  "${FOOTER}&color=${FD}"
+          descargar footer-light.svg "${FOOTER}&color=${FL}"
 
           # Incrustar el GIF para que GitHub no bloquee un recurso externo dentro del SVG.
           MII='https://github.com/user-attachments/assets/76df59b9-a1e1-4fe6-8c81-0acddd85b3a1'
           curl -fsSL --retry 3 --retry-delay 5 -o dist/mii.gif "$MII"
           base64 -w 0 dist/mii.gif > dist/mii.b64
-          for banner in dist/banner-dark.svg dist/banner-light.svg; do
+          for banner in dist/banner-dark.svg dist/banner-light.svg dist/banner-en-dark.svg dist/banner-en-light.svg; do
             python3 - "$banner" dist/mii.b64 <<'PY'
           import pathlib
           import sys
@@ -81,7 +107,7 @@ jobs:
           rm dist/mii.gif dist/mii.b64
 
       - name: Publicar en la rama "tema"
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: crazy-max/ghaction-github-pages@v5.0.0
         with:
           target_branch: tema
           build_dir: dist
