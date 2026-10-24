@@ -16,7 +16,7 @@ env:
 
 jobs:
   rotar:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
       - name: Elegir paleta y generar las imágenes
@@ -83,6 +83,78 @@ jobs:
           # Pie de página (los dos idiomas lo comparten)
           descargar footer-dark.svg  "${FOOTER}&color=${FD}"
           descargar footer-light.svg "${FOOTER}&color=${FL}"
+
+          # Botón "volver arriba": toma el color de la paleta (oscura -> TD, clara -> TL)
+          TOP='https://img.shields.io/badge'
+          descargar top-es-dark.svg  "${TOP}/%E2%AC%86%EF%B8%8F_Volver_arriba-${TD}?style=for-the-badge"
+          descargar top-es-light.svg "${TOP}/%E2%AC%86%EF%B8%8F_Volver_arriba-${TL}?style=for-the-badge"
+          descargar top-en-dark.svg  "${TOP}/%E2%AC%86%EF%B8%8F_Back_to_top-${TD}?style=for-the-badge"
+          descargar top-en-light.svg "${TOP}/%E2%AC%86%EF%B8%8F_Back_to_top-${TL}?style=for-the-badge"
+
+          # Chiste al azar (en español e inglés, el mismo en ambos), dibujado con la paleta del momento
+          python3 - "$TD" "$TL" <<'PY'
+          import html
+          import pathlib
+          import random
+          import sys
+          import textwrap
+
+          acento_oscuro, acento_claro = sys.argv[1:3]
+
+          CHISTES = [
+              ("¿Por qué los programadores confunden Halloween con Navidad? Porque 31 en octal es 25 en decimal.",
+               "Why do programmers confuse Halloween and Christmas? Because 31 in octal is 25 in decimal."),
+              ("Un ingeniero de control entra a un bar... y se queda oscilando en la puerta.",
+               "A control engineer walks into a bar... and keeps oscillating in the doorway."),
+              ("En teoría, teoría y práctica son lo mismo. En la práctica, no.",
+               "In theory, theory and practice are the same. In practice, they are not."),
+              ("Hay 10 tipos de personas: las que entienden binario y las que no.",
+               "There are 10 types of people: those who understand binary and those who do not."),
+              ("Mi código funciona y no sé por qué. Mi código no funciona y tampoco sé por qué.",
+               "My code works and I do not know why. My code does not work and I do not know why either."),
+              ("Un amplificador operacional entra a un bar y dice: «Me siento saturado».",
+               "An op-amp walks into a bar and says: \"I feel saturated.\""),
+              ("Un ingeniero de control nunca discute: solo busca estabilidad.",
+               "A control engineer never argues: they just look for stability."),
+              ("No confíes en los átomos: se inventan todo.",
+               "Never trust atoms: they make up everything."),
+              ("Un programador dice: «En mi máquina funciona». Y así nacieron los contenedores.",
+               "A programmer says: \"It works on my machine.\" And that is how containers were born."),
+              ("¿Por qué los robots nunca se estresan? Porque tienen nervios de acero.",
+               "Why are robots never stressed? Because they have nerves of steel."),
+              ("Un bit le dice a otro: «Nos vemos en el siguiente flanco de subida».",
+               "One bit says to another: \"See you on the next rising edge.\""),
+              ("Lo único más difícil que depurar código es depurar el que escribiste hace seis meses.",
+               "The only thing harder than debugging code is debugging code you wrote six months ago."),
+              ("Mi PID está perfectamente sintonizado... hasta que cambia la planta.",
+               "My PID is perfectly tuned... until the plant changes."),
+              ("Mi microcontrolador y yo tenemos algo en común: los dos nos reiniciamos cuando algo sale mal.",
+               "My microcontroller and I have something in common: we both reboot when things go wrong."),
+              ("Terminar un medio maratón es más fácil que terminar un proyecto: al menos la meta está señalizada.",
+               "Finishing a half marathon is easier than finishing a project: at least the finish line is marked."),
+          ]
+          es, en = random.choice(CHISTES)
+
+          def tarjeta(texto, acento, color_texto):
+              lineas = textwrap.wrap(texto, 60)
+              alto = 28 + 24 * len(lineas) + 16
+              filas = "".join(
+                  f'<text x="24" y="{36 + 24 * i}" font-family="Fira Code, Consolas, Menlo, monospace" '
+                  f'font-size="15" fill="#{color_texto}">{html.escape(l)}</text>'
+                  for i, l in enumerate(lineas)
+              )
+              return (
+                  f'<svg xmlns="http://www.w3.org/2000/svg" width="640" height="{alto}" '
+                  f'viewBox="0 0 640 {alto}" role="img" aria-label="{html.escape(texto)}">'
+                  f'<rect x="1.5" y="1.5" width="637" height="{alto - 3}" rx="12" fill="none" '
+                  f'stroke="#{acento}" stroke-width="3"/>{filas}</svg>'
+              )
+
+          salida = pathlib.Path("dist")
+          for nombre, texto in (("chiste-es", es), ("joke-en", en)):
+              (salida / f"{nombre}-dark.svg").write_text(tarjeta(texto, acento_oscuro, "e6edf3"), encoding="utf-8")
+              (salida / f"{nombre}-light.svg").write_text(tarjeta(texto, acento_claro, "1f2328"), encoding="utf-8")
+          PY
 
           # Incrustar el GIF para que GitHub no bloquee un recurso externo dentro del SVG.
           MII='https://github.com/user-attachments/assets/76df59b9-a1e1-4fe6-8c81-0acddd85b3a1'
