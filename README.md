@@ -37,7 +37,7 @@
 
 <a href="https://github.com/Robotica76"><img src="https://img.shields.io/badge/Club_Rob%C3%B3tica_76-FFB703?style=for-the-badge&logo=github&logoColor=1f2328" alt="Organización Robotica76"/></a>
 <a href="https://www.linkedin.com/in/nestorhernandezcastellanos"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://www.instagram.com/tu-usuario/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+<a href="https://www.instagram.com/NestorHC22/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
 
 </div>
 
@@ -48,34 +48,34 @@
 ### Estudiante de Maestría en Electrónica · Sistemas Inteligentes Aplicados
 ### 🤖 Instructor en el Club de Robótica 76
 
-Me interesa el **control no lineal**, los **sistemas inteligentes** y compartir apuntes y material de estudio en **LaTeX**. Actualmente desarrollo y mantengo apuntes de la maestría para que sean útiles a más personas, y soy **instructor en el Club de Robótica 76**, donde apoyo la formación de nuevos entusiastas de la robótica.
+Soy Ingeniero en Electrónica y actualmente estudio la **Maestría en Electrónica, opción Sistemas Inteligentes Aplicados**, en la **Universidad Tecnológica de la Mixteca**, donde también estudié la ingeniería. Me interesan el **control no lineal**, los **convertidores de potencia**, los **sistemas inteligentes** y compartir apuntes y material de estudio en **LaTeX**. Desde 2025 soy **instructor en el Club de Robótica 76**.
 
 ---
 
-## 🎓 Sobre mí
+## 🎓 Formación
 
-- 🎓 Maestría en Electrónica, Opción: **Sistemas Inteligentes Aplicados**
+- 🎓 **Maestría en Electrónica**, opción Sistemas Inteligentes Aplicados · Universidad Tecnológica de la Mixteca (en curso)
+- ⚡ **Ingeniería en Electrónica** · Universidad Tecnológica de la Mixteca (egresado)
 - 📐 Enfocado en **Control No Lineal**
-- 🤖 **Doy clases en el Club de Robótica 76**
-- 🧠 Interesado en sistemas inteligentes, teoría de control y aplicaciones
-- ✍️ Escribiendo apuntes y documentación técnica en **LaTeX**
-- 🌱 Siempre aprendiendo y abierto a colaborar
 
 ---
 
 ## 🔭 Ahora mismo
 
 - 🔭 Trabajo con **convertidores de potencia** y diferentes **topologías de control**
+- 📓 Escribiendo apuntes de **Control No Lineal** junto con un compañero de grupo
 - 🌱 Estoy aprendiendo sobre **IA**, **cosimulaciones** y **pruebas Monte Carlo**
-- 💬 Pregúntame sobre: **control no lineal**, **sistemas embebidos** (STM32, DSP, ESP32, Arduino), **VHDL**, **MATLAB**, **Python**, **C** y **LaTeX**
+- 💬 Pregúntame sobre: **control no lineal**, **sistemas embebidos** (STM32, DSP, ESP32, Arduino), **VHDL**, **MATLAB**, **Simulink**, **Python**, **C** y **LaTeX**
 - 📫 Cómo contactarme: en la sección [Hablemos](#-hablemos) al final
-- ⚡ Dato curioso: me gusta correr 🏃 Soy medio maratonista y me estoy preparando para mi **primer maratón** 🏅
+- ⚡ Dato curioso: me gusta correr 🏃 Corrí mi **medio maratón en julio de 2026** y me estoy preparando para mi **primer maratón** (meta de 2027) 🏅
 
 ---
 
 ## 🤖 Club de Robótica 76
 
-Soy instructor en **Robotica76**, un club sin fines de lucro donde estudiantes aprenden robótica, mini-robótica y compiten a nivel nacional. 🏆
+Soy instructor en **Robotica76** desde 2025, un club sin fines de lucro donde estudiantes de **11 a 17 años** aprenden robótica y mini-robótica, y compiten a nivel nacional. 🏆
+
+Mi mayor reto es hacerles llegar el conocimiento sin confundirlos.
 
 <div align="center">
 
@@ -90,7 +90,7 @@ Soy instructor en **Robotica76**, un club sin fines de lucro donde estudiantes a
 ## 📚 Proyecto destacado
 
 ### [apuntes-control-no-lineal](https://github.com/NestiHC/apuntes-control-no-lineal)
-Apuntes de la materia **Control No Lineal** — Maestría en Electrónica, Opción: Sistemas Inteligentes Aplicados.
+Apuntes de la materia **Control No Lineal** — Maestría en Electrónica, opción Sistemas Inteligentes Aplicados. 🚧 Siguen en construcción: los escribo junto con un compañero de grupo y los compilo en local con LaTeX desde VS Code. Si los revisas, cualquier comentario es bienvenido.
 
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat&logo=latex&logoColor=white)
 
@@ -109,6 +109,7 @@ Apuntes de la materia **Control No Lineal** — Maestría en Electrónica, Opci�
 ### ⚡ Diseño y simulación de electrónica
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white)
+![Simulink](https://img.shields.io/badge/Simulink-E87722?style=for-the-badge&logo=mathworks&logoColor=white)
 ![PSIM](https://img.shields.io/badge/PSIM-1F6FB2?style=for-the-badge)
 ![Proteus](https://img.shields.io/badge/Proteus-1565C0?style=for-the-badge)
 ![EAGLE](https://img.shields.io/badge/EAGLE-F58220?style=for-the-badge)
@@ -119,8 +120,27 @@ Apuntes de la materia **Control No Lineal** — Maestría en Electrónica, Opci�
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
+---
+
+## 🧭 Lo que me mueve
+
+En *La familia del futuro* aprendí a celebrar los fallos: cuando algo sale mal, ahí se festeja. Como dice la película: «Del fracaso se aprende, del éxito... no mucho».
+
+---
+
+## 🌿 Fuera de la pantalla
+
+- 🏃 Me gusta correr, sobre todo **trail** 🏔️
+- 📚 Leo en mi **Kindle**
+- 🎧 Escucho música en mi **iPod**; se me hace más cómodo
+- 🎮 Me gustan los **videojuegos**
+
+<!-- Cuando esté listo, agregar aquí el enlace a Strava -->
+<!-- Cuando haya inscripción al maratón, agregar aquí un contador regresivo -->
 
 ---
 
@@ -131,6 +151,8 @@ Apuntes de la materia **Control No Lineal** — Maestría en Electrónica, Opci�
 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/255.gif" width="96" alt="Torchic, mi Pokémon compañero"/>
 
 **Torchic** · Tipo Fuego 🔥 · Pokédex #255
+
+Pokémon Rubí fue mi primer juego y Torchic, mi primer Pokémon.
 
 *Pequeño, valiente y siempre listo para arrancar, como un proyecto nuevo.*
 
@@ -229,6 +251,8 @@ Apuntes de la materia **Control No Lineal** — Maestría en Electrónica, Opci�
   <img alt="Chiste de programadores e ingenieros" src="https://raw.githubusercontent.com/NestiHC/NestiHC/tema/chiste-es-light.svg">
 </picture>
 
+<sub><i>Cambia cada hora.</i></sub>
+
 </div>
 
 <!--
@@ -253,7 +277,7 @@ Cuando tengas el enlace de tu widget, descomenta y pégalo aquí:
 <div align="center">
 
 <a href="https://www.linkedin.com/in/nestorhernandezcastellanos"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://www.instagram.com/tu-usuario/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+<a href="https://www.instagram.com/NestorHC22/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
 <a href="mailto:nestihc22@hotmail.com"><img src="https://img.shields.io/badge/Correo-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="Correo"/></a>
 <a href="https://github.com/NestiHC"><img src="https://img.shields.io/badge/GitHub-NestiHC-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub de NestiHC"/></a>
 <a href="https://github.com/Robotica76"><img src="https://img.shields.io/badge/Robotica76_Organizaci%C3%B3n-FFB703?style=for-the-badge&logo=github&logoColor=1f2328" alt="Organización Robotica76"/></a>
@@ -323,7 +347,7 @@ Cuando tengas el enlace de tu widget, descomenta y pégalo aquí:
 
 <a href="https://github.com/Robotica76"><img src="https://img.shields.io/badge/Robotica76_Club-FFB703?style=for-the-badge&logo=github&logoColor=1f2328" alt="Robotica76 organization"/></a>
 <a href="https://www.linkedin.com/in/nestorhernandezcastellanos"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://www.instagram.com/tu-usuario/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+<a href="https://www.instagram.com/NestorHC22/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
 
 </div>
 
@@ -334,34 +358,34 @@ Cuando tengas el enlace de tu widget, descomenta y pégalo aquí:
 ### Master's student in Electronics · Applied Intelligent Systems
 ### 🤖 Instructor at the Robotica76 Club
 
-I'm interested in **nonlinear control**, **intelligent systems**, and sharing notes and study material in **LaTeX**. I'm currently developing and maintaining my master's notes so they can be useful to more people, and I'm an **instructor at the Robotica76 Club**, where I support the training of new robotics enthusiasts.
+I'm an Electronics Engineer and I'm currently pursuing a **Master's in Electronics, track: Applied Intelligent Systems**, at the **Universidad Tecnológica de la Mixteca**, where I also earned my engineering degree. I'm interested in **nonlinear control**, **power converters**, **intelligent systems**, and sharing notes and study material in **LaTeX**. Since 2025 I've been an **instructor at the Robotica76 Club**.
 
 ---
 
-## 🎓 About me
+## 🎓 Education
 
-- 🎓 Master's in Electronics, track: **Applied Intelligent Systems**
+- 🎓 **Master's in Electronics**, track: Applied Intelligent Systems · Universidad Tecnológica de la Mixteca (in progress)
+- ⚡ **B.Sc. in Electronics Engineering** · Universidad Tecnológica de la Mixteca (graduated)
 - 📐 Focused on **Nonlinear Control**
-- 🤖 **I teach at the Robotica76 Club**
-- 🧠 Interested in intelligent systems, control theory, and applications
-- ✍️ Writing notes and technical documentation in **LaTeX**
-- 🌱 Always learning and open to collaborating
 
 ---
 
 ## 🔭 Right now
 
 - 🔭 I work with **power converters** and different **control topologies**
+- 📓 Writing **Nonlinear Control** notes together with a classmate
 - 🌱 I'm learning about **AI**, **co-simulation**, and **Monte Carlo testing**
-- 💬 Ask me about: **nonlinear control**, **embedded systems** (STM32, DSP, ESP32, Arduino), **VHDL**, **MATLAB**, **Python**, **C**, and **LaTeX**
+- 💬 Ask me about: **nonlinear control**, **embedded systems** (STM32, DSP, ESP32, Arduino), **VHDL**, **MATLAB**, **Simulink**, **Python**, **C**, and **LaTeX**
 - 📫 How to reach me: in the [Let's Talk](#-lets-talk) section at the bottom
-- ⚡ Fun fact: I love running 🏃 I'm a half-marathoner and I'm training for my **first marathon** 🏅
+- ⚡ Fun fact: I love running 🏃 I ran my **half marathon in July 2026** and I'm training for my **first marathon** (2027 goal) 🏅
 
 ---
 
 ## 🤖 Robotica76 Club
 
-I'm an instructor at **Robotica76**, a non-profit club where students learn robotics and mini-robotics and compete at the national level. 🏆
+I've been an instructor at **Robotica76** since 2025, a non-profit club where students aged **11 to 17** learn robotics and mini-robotics and compete at the national level. 🏆
+
+My biggest challenge is getting the knowledge across without confusing them.
 
 <div align="center">
 
@@ -376,7 +400,7 @@ I'm an instructor at **Robotica76**, a non-profit club where students learn robo
 ## 📚 Featured project
 
 ### [apuntes-control-no-lineal](https://github.com/NestiHC/apuntes-control-no-lineal)
-Notes for the **Nonlinear Control** course — Master's in Electronics, track: Applied Intelligent Systems.
+Notes for the **Nonlinear Control** course — Master's in Electronics, track: Applied Intelligent Systems. 🚧 Still a work in progress: I'm writing them with a classmate and compiling them locally with LaTeX from VS Code. If you review them, any feedback is welcome.
 
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat&logo=latex&logoColor=white)
 
@@ -395,6 +419,7 @@ Notes for the **Nonlinear Control** course — Master's in Electronics, track: A
 ### ⚡ Electronics design and simulation
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white)
+![Simulink](https://img.shields.io/badge/Simulink-E87722?style=for-the-badge&logo=mathworks&logoColor=white)
 ![PSIM](https://img.shields.io/badge/PSIM-1F6FB2?style=for-the-badge)
 ![Proteus](https://img.shields.io/badge/Proteus-1565C0?style=for-the-badge)
 ![EAGLE](https://img.shields.io/badge/EAGLE-F58220?style=for-the-badge)
@@ -405,8 +430,24 @@ Notes for the **Nonlinear Control** course — Master's in Electronics, track: A
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
+---
+
+## 🧭 What drives me
+
+From *Meet the Robinsons* I learned to celebrate failure: when something goes wrong, they cheer for it. As the movie says, you learn from failure, not so much from success.
+
+---
+
+## 🌿 Off the screen
+
+- 🏃 I love running, especially **trail** 🏔️
+- 📚 I read on my **Kindle**
+- 🎧 I listen to music on my **iPod**; I find it more comfortable
+- 🎮 I enjoy **video games**
 
 ---
 
@@ -417,6 +458,8 @@ Notes for the **Nonlinear Control** course — Master's in Electronics, track: A
 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/255.gif" width="96" alt="Torchic, my Pokémon partner"/>
 
 **Torchic** · Fire type 🔥 · Pokédex #255
+
+Pokémon Ruby was my first game and Torchic, my first Pokémon.
 
 *Small, brave, and always ready to get going, like a new project.*
 
@@ -515,6 +558,8 @@ Notes for the **Nonlinear Control** course — Master's in Electronics, track: A
   <img alt="Programming and engineering joke" src="https://raw.githubusercontent.com/NestiHC/NestiHC/tema/joke-en-light.svg">
 </picture>
 
+<sub><i>Changes every hour.</i></sub>
+
 </div>
 
 <!--
@@ -539,8 +584,8 @@ Feel free to reach out if you want to collaborate on a project, ask a question, 
 <div align="center">
 
 <a href="https://www.linkedin.com/in/nestorhernandezcastellanos"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://www.instagram.com/tu-usuario/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
-<a href="mailto:nestihc22@hotmail.com"><img src="https://img.shields.io/badge/Correo-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="Email"/></a>
+<a href="https://www.instagram.com/NestorHC22/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+<a href="mailto:nestihc22@hotmail.com"><img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="Email"/></a>
 <a href="https://github.com/NestiHC"><img src="https://img.shields.io/badge/GitHub-NestiHC-181717?style=for-the-badge&logo=github&logoColor=white" alt="NestiHC's GitHub"/></a>
 <a href="https://github.com/Robotica76"><img src="https://img.shields.io/badge/Robotica76_Organization-FFB703?style=for-the-badge&logo=github&logoColor=1f2328" alt="Robotica76 organization"/></a>
 
